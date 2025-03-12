@@ -7,7 +7,7 @@ spec:
   shard: kargo-agent
   subscriptions:
   - image:
-      repoURL: ghcr.io/akuity/guestbook
+      repoURL: ghcr.io/dhpup/guestbook
       imageSelectionStrategy: SemVer
 
 ---
