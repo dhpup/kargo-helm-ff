@@ -4,10 +4,9 @@ metadata:
   name: guestbook
   namespace: kargo-helm-ff
 spec:
-  shard: kargo-agent
   subscriptions:
   - image:
-      repoURL: ghcr.io/dhpup/guestbook
+      repoURL: ghcr.io/akuity/guestbook
       imageSelectionStrategy: SemVer
 
 ---
@@ -17,7 +16,6 @@ metadata:
   name: features
   namespace: kargo-helm-ff
 spec:
-  shard: kargo-agent
   subscriptions:
   - git:
       branch: main
