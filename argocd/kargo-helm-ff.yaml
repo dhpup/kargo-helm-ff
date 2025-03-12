@@ -9,6 +9,7 @@ spec:
     path: kargo
   destination:
     name: kargo1
+    namespace: argocd
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
