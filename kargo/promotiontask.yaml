@@ -23,7 +23,7 @@ spec:
     as: layer2
     config:
       layer2:
-        input: ${{ task.outputs.tags.config.repo2 }}
+        input: ${{ task.outputs.tags.config }}
   - uses: git-clone
     config:
       repoURL: ${{ vars.repoURL }}
