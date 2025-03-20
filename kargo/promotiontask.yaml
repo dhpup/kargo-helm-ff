@@ -46,3 +46,12 @@ spec:
     config:
       apps:
       - name: ${{ vars.argocdApp }}
+  - uses: compose-output
+    as: tags
+    config:
+      repo2: ${{ vars.repoURL }}
+  - uses: compose-output
+    as: layer2
+    config:
+      layer2:
+        input: ${{ task.outputs.tags.repo2 }}
